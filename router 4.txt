@@ -1,0 +1,27 @@
+en
+conf t
+
+hostname R4
+no ip domain-lookup
+
+
+int se0/2/0
+ip add 10.20.1.1 255.255.255.252
+no shut 
+exit
+
+int se0/1/1
+ip add 10.0.1.1 255.255.255.252
+no shut
+exit
+
+int se0/1/0
+ip add 10.0.0.2 255.255.255.252
+no shut
+exit
+
+router eigrp 10
+
+network 10.20.1.0 255.255.255.252
+network 10.0.1.0 255.255.255.252
+network 10.0.0.0 255.255.255.252

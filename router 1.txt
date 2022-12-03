@@ -1,0 +1,24 @@
+en
+conf t
+
+hostname R1
+no ip domain-lookup
+
+
+int gig0/0/0
+ip add 192.168.120.1 255.255.255.0
+no shut 
+exit
+
+int se0/1/0
+ip add 10.20.1.2 255.255.255.252
+no shut
+exit
+
+router eigrp 10
+
+network 192.168.120.0 0.0.0.255
+network 10.20.1.0 255.255.255.252
+
+
+
