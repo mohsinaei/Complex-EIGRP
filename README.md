@@ -14,6 +14,10 @@ REPLY packets. Sent after an entire QUERY packet has been received to acknowledg
 REQUEST packets. Used to request specific information from one or more neighbors, similar to QUERY packets but sent unreliably -- no notification if delivery fails. <br />
 UPDATE packets. Convey information about destinations and their reachability.<br />
 
+<br />
+<br />
+<br />
+
 EIGRP benefits:
 
 Faster convergence Better routing protoocol to avoid routing loops Optimized network performance and lower load on the routers Reduces the protocol's load on the network because only changes to the routing table are propagated, rather than the entire routing table
