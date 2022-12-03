@@ -8,10 +8,11 @@ Vendor: Cisco Type: Distance vector protocol EIGRP is an enhanced distance vecto
 
 EIGRP steps:
 
-HELLO packets. Sent out at regular intervals to facilitate the neighbor discovery process. 
-QUERY packets. Used by a router to advertise that a route is in an active state and to request alternate path information from neighbors. 
-REPLY packets. Sent after an entire QUERY packet has been received to acknowledge that packet's receipt. 
-REQUEST packets. Used to request specific information from one or more neighbors, similar to QUERY packets but sent unreliably -- no notification if delivery fails. UPDATE packets. Convey information about destinations and their reachability.
+HELLO packets. Sent out at regular intervals to facilitate the neighbor discovery process. <br />
+QUERY packets. Used by a router to advertise that a route is in an active state and to request alternate path information from neighbors. <br />
+REPLY packets. Sent after an entire QUERY packet has been received to acknowledge that packet's receipt. <br />
+REQUEST packets. Used to request specific information from one or more neighbors, similar to QUERY packets but sent unreliably -- no notification if delivery fails. <br />
+UPDATE packets. Convey information about destinations and their reachability.<br />
 
 EIGRP benefits:
 
